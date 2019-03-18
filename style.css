@@ -1,0 +1,116 @@
+/* --                    Generic Declarations                    -- */
+body { width: 100%; height: 100%; margin: 0; padding: 0; overflow: hidden; background-color: black; background: url('images/backg.jpg') no-repeat black; background-size: 100%; cursor: default; }
+img { display: inline-block; position: relative; vertical-align: middle; border: none; outline: none; }
+textarea, select, input { overflow: auto; }
+.table { display: table; margin-top: 2px; }
+.tr { display: table-row; }
+.td { display: table-cell; padding-bottom: 4px; }
+
+/* --                    Text Selection                    -- */
+::selection { background: none; }
+::-moz-selection { background: none; }
+::-moz-user-select { background: none; }
+::-webkit-user-select { background: none; }
+::-webkit-touch-callout { background: none; }
+::user-select { background: none; }
+
+/* --                    E-mail                    -- */
+#email { display: block; position: absolute; width: 520px; height: 460px; border: 1px solid #2D2E2F; border-radius: 5px; overflow: hidden; top: 30px; left: 120px; }
+#emailbg { display: inline-block; position: absolute; width: 100%; height: 100%; background-color: #bddefd; }
+#emailhead { display: inline-block; position: relative; width: 100%; height: 26px; padding-top: 4px; padding-left: 8px; vertical-align: top; font-size: 14px; }
+#emailheadright { display: inline-block; position: absolute; width: auto; height: 26px; padding-top: 2px; vertical-align: top; font-size: 14px; right: 0px; padding-right: 20px; text-align: right; }
+#emailcontent { display: inline-block; position: relative; width: 492px; height: 410px; margin-left: 8px; border: 1px solid 5d6c7a; background-color: #e1e5e9; box-shadow: 0 -1px 6px 1px #212324; padding: 6px; color: #161717; font-size: 13px; }
+#emailinput input { border: 1px solid #9EA0A3; font-size: 12px; color: #1A140A; }
+#emailcontent textarea { border: 1px solid #9EA0A3; border-radius: 3px; width: 490px; resize: none; size: 12px; color: #1A140A; }
+#emailcontent textarea::selection { background: lightblue; }
+#emailcontent textarea::-moz-selection { background: lightblue; }
+#emailsend { display: inline-block; position: relative; height: 48px; width: 40px; text-align: center; font-style: italic; margin-right: 2px; border: 1px solid #bbbfc4; border-radius: 3px; padding: 4px; }
+#emailsend:hover { background-color: #EDEFF2; cursor: pointer; }
+#emailinput {display: inline-block; position: relative; vertical-align: top; height:48px; border: 1px solid #bbbfc4; border-radius: 3px; padding: 4px 4px 4px 6px; width: 424px; }
+#emailbuttons { display: block; position: relative; vertical-align: middle; height: 16px; border: 1px solid #bbbfc4; margin: 3px 0 3px 0; padding: 4px 4px 4px 6px; width: 480px; }
+
+/* --					Windows						-- */
+.windowbg { display: inline-block; position: absolute; width: 100%; height: 100%; background-color: #bddefd; }
+.windowhead { display: inline-block; position: relative; width: 100%; height: 26px; padding-top: 4px; padding-left: 8px; vertical-align: top; font-size: 14px; }
+.windowheadright { display: inline-block; position: absolute; width: auto; height: 26px; padding-top: 2px; vertical-align: top; font-size: 14px; right: 0px; padding-right: 20px; text-align: right; }
+
+/* --					About						-- */
+#about { display: block; position: absolute; width: 680px; height: 500px; border: 1px solid #2D2E2F; border-radius: 5px; overflow: hidden; top: 60px; left: 150px; }
+#aboutcontent { display: inline-block; position: relative; width: 652px; height: 441px; margin-left: 8px; border: 1px solid 5d6c7a; background-color: #e1e5e9; box-shadow: 0 -1px 6px 1px #212324; padding: 6px; padding-top: 15px; color: #161717; font-size: 13px; }
+#aboutmepic { display: block; position: absolute; width: 186px; height: 246px; top: 15px; right: 15px; background: url('images/aboutmepic.png') no-repeat; background-size: 180px 240px; background-position: center center; border: 2px solid #87898C; }
+
+/* --					Downloads						-- */
+#downloads { display: block; position: absolute; width: 750px; height: 405px; border: 1px solid #2D2E2F; border-radius: 5px; overflow: hidden; top: 60px; left: 150px; }
+#downloadscontent { display: inline-block; position: relative; width: 730px; height: 363px; margin-left: 8px; border: 1px solid 5d6c7a; background-color: #cdcdd1; box-shadow: 0 -1px 6px 1px #212324; color: #161717; font-size: 13px; padding: 2px; }
+#downloadsfolders { display: inline-block; position: absolute; width: 190px; height: 361px; background-color: #FDFDFD; border: 1px solid #d6e5f5; }
+#downloadsfiles { display: inline-block; position: absolute; width: 534px; height: 361px; background-color: #FDFDFD; border: 1px solid #d6e5f5; left: 196px; }
+.downhead {  display: inline-block; color: #8c6091; padding-left: 4px; border-right: 1px solid lightgrey; background-color: #FEFEFE; margin: 0; }
+#downloadsfilescontent { display: block; position: absolute; width: 532px; height: 340px; left: 1px; background-color: white; }
+.dfile { display: block; width: 531px; left: 1px; padding: 2px; }
+.dfile a { text-decoration: none; color: black; outline: none; }
+.dfile:hover { display: block; background-color: #c3ddfd; border: 1px solid #A4BEDD; border-radius: 2px; width: 527px; padding: 1px; }
+.fname { display: inline-block; width: 231px; padding-left: 4px; cursor: pointer; }
+.fdate { display: inline-block; width: 117px; text-align: right; }
+.ftype { display: inline-block; width: 43px; text-align: right; }
+.fsize { display: inline-block; width: 107px; text-align: right; }
+
+/* --                    Buttons                    -- */
+.closebutton { display: inline-block; position:relative; background: url('images/close.png') no-repeat; height: 17px; width: 31px; }
+.closebutton:hover { background-position: 0px -17px; cursor: pointer; }
+.minimizebutton { display: inline-block; position:relative; background: url('images/minimize.png') no-repeat; height: 17px; width: 31px; }
+.minimizebutton:hover { background-position: 0px -17px; cursor: pointer; }
+.maximizebutton { display: inline-block; position:relative; background: url('images/maximize.png') no-repeat; height: 17px; width: 31px; }
+.maximizebutton:hover { background-position: 0px -17px; cursor: pointer; }
+
+/* --                    Start Menu                    -- */
+#startmenu { display: block; position: absolute; bottom: 40px; left: 1px; width: 420px; height: 460px; border: 1px solid #484c50; border-top-left-radius: 5px; border-top-right-radius: 5px; z-index: 9999; }
+#startmenubg { position: absolute; display: inline-block; height: 100%; width: 100%; background-color: #0a0e11; opacity: 0.6; }
+#avatar { position: absolute; display: block; background: url('images/startuser.png') no-repeat #0a0e11 center center; width: 65px; height: 65px; background-size: 92%; top: 10px; right: 47px; border-radius: 5px; border: 3px solid #484c50; }
+#programs { display: block; position: relative; left: 1px; width: 240px; height: 440px; border: 2px solid #484c50; border-radius: 5px; background-color: white; opacity: 1.0; margin-top: 8px; margin-left: 7px; padding: 1px 2px 1px 2px; }
+.program { display: inline-block; position: relative; width: 235px; height: 34px; max-height: 34px; margin: 0 0 6px 0; vertical-align: middle; font-size: 9pt; padding: 4px 0px 0px 4px; }
+.program:hover { background-color: #c3ddfd; border: 1px solid #7da2ce; border-radius: 2px; padding: 3px 0px 0px 3px; margin: 0 0 5px 0; cursor: pointer; }
+.program img { height: 32px; width: 32px; }
+
+/* --                    Hover Bubbles                    -- */
+#timebubble { position: fixed; display: block; background: white; height: 14px; width: auto; bottom: 45px; border-radius: 3px; border: 1px solid #484c50; padding: 2px; font-size: 11px; text-align: right; margin-right: 20px; right: 0px; }
+#timebubble:before { content:""; display: block; position: absolute; bottom:-4px; right: 8px; width: 0; border-width: 4px 8px 0; border-style: solid; border-color:#484c50 transparent;}
+#timebubble:after { content:""; display: block; position: absolute; bottom:-3px; right: 10px; width: 0; border-width: 3px 6px 0; border-style: solid; border-color: white transparent; }
+#hoverbubble { position: fixed; display: block; background: white; height: 14px; width: auto; bottom: 45px; border-radius: 3px; border: 1px solid #484c50; padding: 2px; font-size: 11px; z-index: 10000; }
+#hoverbubble:before { content:""; display:block; position:absolute; bottom:-4px; left:8px; width:0; border-width:4px 8px 0; border-style:solid; border-color:#484c50 transparent; }
+#hoverbubble:after { content:""; display:block; position:absolute; bottom:-3px; left:10px; width:0; border-width:3px 6px 0; border-style:solid; border-color:white transparent; }
+.errorbubble { position: fixed; display: block; background: white; height: 14px; width: auto; border-radius: 3px; border: 1px solid #484c50; padding: 2px; font-size: 11px; }
+.errorbubble:before { content:""; display:block; position:absolute; bottom:4px; left:-8px; width:0; border-width:5px 8px 5px 0px; border-style:solid; border-color:transparent #484c50; }
+.errorbubble:after { content:""; display:block; position:absolute; bottom:5px; left:-7px; width:0; border-width:4px 7px 4px 0px; border-style:solid; border-color:transparent white; }
+
+/* --                    Taskbar                    -- */
+#taskbar { display: block; position: absolute; bottom: 0px; width: 100%; height: 40px; overflow-y: hidden; }
+#taskbar p { margin: 2px 0 0 0; }
+#taskbarbg { position: absolute; display: inline-block; background: url('images/taskbar.png') #090f14 repeat-x; width: 100%; height: 100%; opacity: 0.8; }
+#orb { display: inline-block; position: relative; margin-left: 8px; padding-right: 14px; background: url('images/orb.png') no-repeat; background-position: -4px -7px; width: 40px; height: 40px; }
+#orb:hover { background-position: -4px -61px; }
+.taskitem { display: inline-block; position: relative; height: 32px; width: 54px; top: 5px; text-align: center; vertical-align: top; }
+.taskitem:hover { border-left: 1px solid #56595d; border-right: 1px solid #56595d; width: 52px; cursor: pointer; }
+.taskitemopen { display: inline-block; position: relative; height: 34px; text-align: center; vertical-align: top; border: 1px solid #56595d; width: 52px; cursor: pointer; border-radius: 2px; background-color: #3A3F43; top: 3px; }
+#taskright { display: inline-block; position: absolute; right: 0px; height: 40px; width: auto; text-align: right; color: white; font-size: 11pt; }
+.flag { display: inline-block; background: url('images/flag.png') no-repeat; background-position: center center; position: relative; height: 32px; width: 26px; top: 5px; vertical-align: top; }
+.flag:hover { border-left: 1px solid #56595d; border-right: 1px solid #56595d; width: 24px; }
+#datetime { display: inline-block; position: relative; width: auto; text-align: center; vertical-align: top; top: 4px; padding: 0 14px 0 14px; font-size: 13px; }
+#datetime:hover { border-left: 1px solid #56595d; border-right: 1px solid #56595d; padding: 0 13px 0 13px; }
+#minimize { display: inline-block; background: url('images/minimizeall.png') no-repeat; right: 0px; width: 15px; height: 40px; }
+#minimize:hover { background-position: 0px -40px; }
+
+/* --                    Post-its                    -- */
+.postit { display: block; position: fixed; top: 15px; max-width: 200px; width: 200px; height: 200px; right: 15px; overflow-y: hidden; background-color: transparent; overflow-x: hidden; }
+.postit2 { display: block; position: fixed; top: 230px; max-width: 200px; width: 200px; height: 200px; right: 15px; overflow-y: hidden; background-color: transparent; overflow-x: hidden; }
+.postit:before { content: ""; display: block; Position: absolute; top: 0px; right: 0px; width: 0; border-width: 0px 19px 19px 0px; border-style: solid; border-color: #CCCC52 transparent; }
+.postit:after { content: ""; display: block; Position: absolute; top: 0; right: 0; width: 0; border-width: 19px 0px 0px 19px; border-style: solid; border-color: transparent; }
+.postit2:before { content: ""; display: block; Position: absolute; top: 0px; right: 0px; width: 0; border-width: 0px 19px 19px 0px; border-style: solid; border-color: #52CC52 transparent; }
+.postit2:after { content: ""; display: block; Position: absolute; top: 0; right: 0; width: 0; border-width: 19px 0px 0px 19px; border-style: solid; border-color: transparent; }
+.postithead { width: 181px; height: 19px; display: inline-block; position: absolute; background-color: #E6E65C; font-size: 10pt; border: 1px solid black; border-bottom: none; border-right: none; }
+.postithead2 { width: 181px; height: 19px; display: inline-block; position: absolute; background-color: #5CE65C; font-size: 10pt; border: 1px solid black; border-bottom: none; border-right: none; }
+.postitbody textarea { width: 199px; height: 182px; top: 18px; display: block; position: relative; font-size: 9pt; background: #FFFF66; border: 1px solid black; border-top: none; resize: none; overflow-y: none; }
+.postitbody2 textarea { width: 199px; height: 182px; top: 18px; display: block; position: relative; font-size: 9pt; background: #66FF66; border: 1px solid black; border-top: none; resize: none; overflow-y: none; }
+.postitbody textarea::selection { background: lightblue; }
+.postitbody textarea::-moz-selection { background: lightblue; }
+.postitbody2 textarea::selection { background: lightblue; }
+.postitbody2 textarea::-moz-selection { background: lightblue; }
